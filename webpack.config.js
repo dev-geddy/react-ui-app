@@ -20,6 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
+        exclude: /node_modules\/(?!(@reactivelabs)\/)/,
         loader: 'babel-loader',
         test: /\.js$/
       },
